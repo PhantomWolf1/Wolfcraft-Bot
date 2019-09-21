@@ -5,7 +5,7 @@ module.exports.run = (bot, message, args, Discord) => {
   let em = new Discord.RichEmbed()
     .setTitle("You have been force verified!")
     .setColor("GREEN")
-    memberid.send({embed})
+    memberid.send({embed: em})
   //Verification message
   
   let role = message.guild.roles.get("625086210842558484")
