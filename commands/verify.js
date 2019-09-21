@@ -1,6 +1,7 @@
 module.exports.run = (bot, message, args, Discord) => {
   let em = new Discord.RichEmbed()
   .setTitle("You have been verified!")
+  .setColor("GREEN")
   message.author.send({embed: em})
   //Verification message
   
