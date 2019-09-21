@@ -3,7 +3,7 @@ module.exports.run = (bot, message, args, Discord) => {
  let member = message.mentions.members.first();
  let memberid = member.id
   let em = new Discord.RichEmbed()
-    .setTitle("You have been force verified!")
+    .setTitle(`You have been force verified by: ${message.author.username} `)
     .setColor("GREEN")
     bot.users.get(memberid).send({embed: em})
   //Verification message
