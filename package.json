@@ -1,14 +1,15 @@
 {
-  "name": "reign-bdo-discord-bot",
+  "name": "wolfcraft-bot",
   "version": "0.0.1",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node bot.js"
   },
-  "author": "ygordanniel",
+  "author": "phantomwolf",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "11.3.0"
+    "discord.js": "11.3.0",
+    "mysql": "latest"
   }
 }
