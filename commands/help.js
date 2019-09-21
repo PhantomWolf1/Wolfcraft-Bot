@@ -7,4 +7,4 @@ module.exports.run = (bot, message, args, Discord) => {
 
 module.exports.help = {
 "name": "help"
-;
+}
