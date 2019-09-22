@@ -23,5 +23,5 @@ module.exports.run = (bot, message, args, Discord) => {
 }
 
 module.exports.help = {
-"name": "fver"
+"name": "unverify"
 }
