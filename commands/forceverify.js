@@ -7,15 +7,15 @@ module.exports.run = (bot, message, args, Discord) => {
   let member = message.mentions.members.first();
  let memberid = member.id
   let em = new Discord.RichEmbed()
-    .setTitle(`You have been force verified by: ${message.author.username} `)
-    .setColor("GREEN")
+    .setTitle(`You have been unverified by: ${message.author.username} `)
+    .setColor("RED")
     bot.users.get(memberid).send({embed: em})
   //Verification message
   
   let role = message.guild.roles.get("625086210842558484")
 
   
-  member.addRole(role);
+  member.removeRole(role);
 } else {
   message.channel.send(`You don't have permission to use this command.`);
 }
