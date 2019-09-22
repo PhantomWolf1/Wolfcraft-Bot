@@ -12,7 +12,7 @@ module.exports.run = (bot, message, args, Discord) => {
   let role = message.guild.roles.get("625086210842558484")
 
   
-  member.removerole(role);
+  member.removeRole(role);
 } else {
   message.channel.send(`You don't have permission to use this command.`);
 }
